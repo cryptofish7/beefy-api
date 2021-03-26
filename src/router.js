@@ -5,11 +5,11 @@ const router = new Router();
 
 const noop = require('./api/noop');
 const stats = require('./api/stats');
-const supply = require('./api/supply');
+// const supply = require('./api/supply');
 const price = require('./api/price');
-const gov = require('./api/stats/gov');
-const cmc = require('./api/cmc');
-const stake = require('./api/stake');
+// const gov = require('./api/stats/gov');
+// const cmc = require('./api/cmc');
+// const stake = require('./api/stake');
 
 router.get('/apy', stats.apy);
 // router.get('/cmc', cmc.vaults);

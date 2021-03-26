@@ -12,16 +12,16 @@ const cmc = require('./api/cmc');
 const stake = require('./api/stake');
 
 router.get('/apy', stats.apy);
-router.get('/cmc', cmc.vaults);
+// router.get('/cmc', cmc.vaults);
 
-router.get('/supply', supply.supply);
-router.get('/supply/total', supply.total);
-router.get('/supply/circulating', supply.circulating);
+// router.get('/supply', supply.supply);
+// router.get('/supply/total', supply.total);
+// router.get('/supply/circulating', supply.circulating);
 
-router.get('/earnings', gov.earnings);
-router.get('/holders', gov.holderCount);
+// router.get('/earnings', gov.earnings);
+// router.get('/holders', gov.holderCount);
 
-router.get('/stake', stake.data);
+// router.get('/stake', stake.data);
 router.get('/lps', price.lpsPrices);
 router.get('/prices', price.tokenPrices);
 

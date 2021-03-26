@@ -1,12 +1,10 @@
 const { getAmmTokensPrices, getAmmLpPrices } = require('../stats/getAmmPrices');
-const getBeltVenusLpPrice = require('../stats/belt/getBeltVenusLpPrice');
 
 async function lpsPrices(ctx) {
   try {
     const lpTokenPrices = await getAmmLpPrices();
-    const beltVenusBLP = await getBeltVenusLpPrice();
     ctx.status = 200;
-    ctx.body = { ...lpTokenPrices, ...beltVenusBLP };
+    ctx.body = { ...lpTokenPrices };
   } catch (err) {
     console.error(err);
     ctx.status = 500;
